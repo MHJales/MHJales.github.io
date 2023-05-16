@@ -2,80 +2,89 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <title>Currículo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <script>
-        const growButton = function(id) {
-            document.getElementById(id).style.width = '15%'
-        }
-
-        const shrinkButton = function(id) {
-            document.getElementById(id).style.width = '10%'
-        }
-
-        const changeButtonImg = function(id, path){
-            var doc = document.getElementById(id)
-            doc.src = path           
-        }
-    </script>
-    
-    <div class="topnav">
-        <a class="active" href="./index.html">Home</a>
-        <a href="./boxes.html">Caixas</a>
-        <a href="./us.html">Sobre nós</a>
-        <a href="./idea.html">A ideia</a>
-        <a href="./shop.html">Comprar</a>
-    </div>
-
-    <div class="main-body">
-        <div class="pages">
-            <div class="boxes">
-                <a href="/boxes.html">
-                    <img class="page-icon gradient-overlay" src="./imgs/CartoonBoxTable.png" alt="Sobre as caixas">
-                    <div class="page-title">Caixas...</div>
-                </a>
+    <div class="foreground">
+        <div class="title-section" id="title">
+            <div class="photo" id="photo">
+                <img src="photo.png" alt="Minha foto">
             </div>
-            <div class="idea">
-                <a href="/idea.html">
-                    <img class="page-icon gradient-overlay" src="./imgs/CartoonBoxTable.png" alt="A ideia">
-                    <div class="page-title">Ideia...</div>
-                </a>
-            </div>
-            <div class="shop">
-                <a href="/shop.html">
-                    <img class="page-icon gradient-overlay" src="./imgs/CartoonBoxTable.png" alt="Comprar">
-                    <div class="page-title">Comprar...</div>
-                </a>
-            </div>
-            <div class="us">
-                <a href="/us.html">
-                    <img class="page-icon gradient-overlay" src="./imgs/CartoonBoxTable.png" alt="Sobre nós">
-                    <div class="page-title">Sobre nós...</div>
-                </a>
+            <div class="name">
+                <h1>Matheus Henrique Souza Jales</h1>
             </div>
         </div>
-    </div>
-
-    <div class="site-infos" id="site-infos">
-        <div class="info-icon">
-            <a href="mailto:projetocaixacartoon@gmail.com">
-                <img class="sizeChange" src="./imgs/MailBox.png" alt="Enviar email" title="Enviar email para projetocaixacartoon@gmail.com">
-            </a>
-            <h1>projetocaixacartoon@gmail.com</h1>
+        <div class="section" id="about-me">
+            <h2>- About me</h2>
+            <h3>* Programo desde o segundo ano do ensino médio</h3>
+            <h3>* Aprendo as coisas de maneira rápida</h3>
+            <h3>* Programo principalmente como hobby, mas procuro trabalhar na área para criar experiência e me estabelecer nesse mercado</h3>
+            <h3>* Gosto de aprender novas habilidades, o que torna este trabalho fácil e divertido para mim</h3>
+            <h3>* Sou uma pessoa calma. Então não tenho problemas me relacionando com pessoas, sejam elas colegas ou clientes</h3>
         </div>
-        <div class="info-icon">
-            <a href="tel:+5531984751111">
-                <img class="sizeChange" src="./imgs/PhoneBox.png" alt="Telefone" title="Nosso telefone: (31) 98475-1111">
-            </a>
-            <h1>(31) 98475-1111</h1>
+        <div class="section" id="goals">
+            <h2>- Objetivos</h2>
+            <h3>* Meu principal objetivo é criar uma relação de ajuda mútua com as pessoas ao meu redor. Quero colaborar com seus objetivos e quero crescer como pessoa no processo</h3>
+            <h3>* Na área de Programação/Engenharia de Software, pretendo trabalhar na projeção e execução de sistemas, principalmente servidores e aplicativos desktops</h3>
+            <h3>* Na Engenharia Civil, quero trabalhar como Engenheiro de Estruturas</h3>
         </div>
-        <div class="info-icon">
-            <a href="https://github.com/MHJales/mhjales.github.io">
-                <img class="sizeChange" src="./imgs/GitHubCaixa.png" alt="Vizualizar código-fonte" title="Código-fonte">
-            </a>
-            <h1>MHJales/Cartoon-Milk-Box-Site</h1>
+        <div class="section" id="skills">
+            <h2>- Skills</h2>
+            <div class="item" id="java">
+                <h3>* Conforto em Java e suas tecnologias</h3>
+                <h4>. Java Swing</h4>
+                <h4>. JDA</h4>
+                <h4>. Gson</h4>
+                <h4>. Gson</h4>
+                <h4>. Outras tecnologias</h4>
+            </div>
+            <div class="item" id="python">
+                <h3>* Conforto em Python e suas tecnologias</h3>
+                <h4>. matplotlib</h4>
+                <h4>. openpyxl</h4>
+                <h4>. Outras tecnologias</h4>
+            </div>
+            <div class="item" id="C++">
+                <h3>* Conforto em C/C++ e suas tecnologias</h3>
+                <h4>. SFML</h4>
+                <h4>. Unreal Engine</h4>
+                <h4>. Lua</h4>
+            </div>
+            <div class="item" id="C#">
+                <h3>* Conforto em C# e suas tecnologias</h3>
+                <h4>. WinForms</h4>
+                <h4>. Unity Engine</h4>
+            </div>
+            <div class="item" id="Lua">
+                <h3>* Conforto em Lua e suas tecnologias</h3>
+            </div>
+            <div class="item" id="Others">
+                <h3>* Consigo me virar com outras linguagens da família C, como Rust, JavaScript, TypeScript, etc</h3>
+                <h3>* Recentemente comecei a aprender COBOL, com o intuito de expandir meu repertório</h3>
+            </div>
+        </div>
+        <div class="section" id="formation">
+            <h2>- Formações</h2>
+            <h3>* Engenharia Civil - UFMG - desde 2022</h3>
+            <h4>* Expectativa de conclusão de curso: 2026</h4>
+            <h4>* Conclui o curso de Programação de Computadores com nota final igual a 90</h4>
+            <h3>* Ensino Médio: Cursado integralmente no Colégio Santo Antônio</h3>
+            <h3>* Aprendo programação de forma autodidata desde 2018</h3>
+        </div>
+        <div class="section" id="experiences">
+            <h2>- Experiências</h2>
+            <h3>* Professor de Matemática e Ciências na ONG Juatuba Transparente, desde 2022</h3>
+            <h4>* A ONG Juatuba Transparente é responsável por fornecer aulas de reforço gratuitas para alunos da região de Juatuba</h4>
+            <h3>* Engenharia de Soluções</h3>
+            <h4>* Participei do Desafio ENG200 durante meu primeiro semestre na UFMG. Durante o desafio, nosso grupo teve que trabalhar em equipe para criar uma solução para a alta quantidade de lixo produzido na indústria de laticínios. Nossa solução foi a criação de uma embalagem ecológica produzida a base de bagaço de cana-de-açúcar</h4>
+        </div>
+        <div class="section" id="contact">
+            <h2>- Contacts</h2>
+            <h3>* Telefone: (31) 98475-1111</h3>
+            <h3>* Email: mhjales20@gmail.com</h3>
+            <h3>* Github: (Placeholder)</h3>
         </div>
     </div>
 </body>
